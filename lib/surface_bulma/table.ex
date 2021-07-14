@@ -89,7 +89,7 @@ defmodule SurfaceBulma.Table do
           </tr>
         </thead>
         <tbody>
-          {#for {item, index} <- Enum.with_index(@sorted_data)}
+          {#for {item, index} <- Enum.with_index(@data)}
             <tr class={row_class_fun(@row_class).(item, index)}>
               {#for {_, index} <- Enum.with_index(@cols)}
                 <td>
